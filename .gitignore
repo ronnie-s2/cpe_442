@@ -1,0 +1,22 @@
+cat <<EOF > .gitignore
+# 1. Ignore everything by default
+*
+
+# 2. Allow the essentials
+!.gitignore
+!Makefile
+!*.cpp
+
+# 3. Explicitly ignore heavy or junk files (even if they match above)
+# Ignore all videos to prevent repo bloat
+*.mp4
+# Ignore Windows metadata files
+*.Identifier
+# Ignore compiled binaries (like your 'viewer' or 'sobel_video_threads' files)
+viewer
+sobel_video_threads
+
+# 4. Optional: If you have small test videos you DO want to track, 
+# you can un-ignore them specifically here:
+#!small_test_video.mp4
+EOF
