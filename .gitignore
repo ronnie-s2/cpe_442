@@ -1,4 +1,19 @@
 cat <<EOF > .gitignore
+# Ignore everything
+*
+
+# Allow only these specific files
+!.gitignore
+!Makefile
+!sobel_video_papi.cpp
+!sobel_video_papi_headless.cpp
+
+# Keep videos and other clutter ignored
+*.mp4
+*.Identifier
+viewer
+sobel_video_threads
+EOFcat <<EOF > .gitignore
 # 1. Ignore everything by default
 *
 
