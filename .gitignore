@@ -1,7 +1,0 @@
-# Ignore everything by default
-*
-
-# Allow only these three files
-!Makefile
-!sobel_video_papi.cpp
-!sobel_video_papi_headless.cpp
